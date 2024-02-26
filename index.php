@@ -19,7 +19,7 @@
 			<?php
 				if(isset($_POST["login"]))
 				{
-					$sql="select * from admin where ANAME='{$_POST["aname"]}' and APASS='{$_POST["apass"]}'";
+					$sql="select * from admin where ANAME='{$_POST["Admin_username"]}' and APASS='{$_POST["Admin_password"]}'";
 					$res=$db->query($sql);
 					if($res->num_rows>0)
 					{
@@ -51,7 +51,7 @@
 			</div>
 		</div>
 		<div class="footer">
-			<footer><p>Copyright &copy; Rajesh </p></footer>
+			<footer><p>Copyright &copy; Tutor Joe's </p></footer>
 		</div>
 		<script src="js/jquery.js"></script>
 		 <script>
