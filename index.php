@@ -19,7 +19,7 @@
 			<?php
 				if(isset($_POST["login"]))
 				{
-					$sql="select * from admin where ANAME='{$_POST["Admin_username"]}' and APASS='{$_POST["Admin_password"]}'";
+					$sql="select * from admin where ANAME='{$_POST["aname"]}' and APASS='{$_POST["apass"]}'";
 					$res=$db->query($sql);
 					if($res->num_rows>0)
 					{

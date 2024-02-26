@@ -1,8 +1,11 @@
 <?php
-	$db=new mysqli("mysql.selfmade.ninja:3306","Rajesh","","college");
+	$db=new mysqli("localhost:8080","Rajesh","college");
 	if(!$db)
 	{
 		echo "failed";
 	}
-	
+    else{
+        echo "connected";
+    }
+    
 ?>
